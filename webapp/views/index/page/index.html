@@ -1,0 +1,18 @@
+{% extends '../../layout/page/layout.html' %} {% block title %}index{{title}}{%endblock%} {% block head%}
+<link rel="stylesheet" href="../index.css">
+<script src="../index.js"></script>
+<script src="../../../widget/show/show.js"></script>
+{% endblock %} {% block content%}
+<div class="row">
+  <div class="col-md-6">
+    <form>
+      <div class="form-group">
+        <label for="username">用户名</label>
+        <input type="email" class="form-control" id="username" placeholder="请输入用户名">
+      </div>
+      <button type="submit" id="btnsubmit" class="btn btn-info">提交</button>
+    </form>
+  </div>
+  <div class="col-md-6">{% include "../../../widget/add/add.html" %}</div>
+</div>
+{%endblock%}

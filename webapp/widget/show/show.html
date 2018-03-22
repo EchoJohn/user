@@ -1,0 +1,24 @@
+<div class="widget-add">
+  <div class="panel panel-default" style="margin-top:20px;">
+    <!-- Default panel contents -->
+    <div class="panel-heading">用户信息</div>
+    <table class="table">
+      <tr>
+        <th>序号</th>
+        <th>姓名</th>
+        <th>修改</th>
+        <th>删除</th>
+      </tr>
+      <tr class="add">
+        <th v-for="id in ids"></th>
+        <th v-for="name in names"></th>
+        <th>
+          <button type="button" class="btn btn-info">修改</button>
+        </th>
+        <th>
+          <button type="button" class="btn btn-danger">删除</button>
+        </th>
+      </tr>
+    </table>
+  </div>
+</div>
